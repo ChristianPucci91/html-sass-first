@@ -1,3 +1,15 @@
-body {
-  background: red;
+@import "common";
+@import "variables";
+
+body > * {
+  @include size;
+}
+$text_color:lightblue;
+
+
+@each $item in h1 {
+#{$item} {
+   text-align: center;
+   color:$text_color
+ }
 }
