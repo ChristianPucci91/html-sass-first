@@ -1,15 +1,47 @@
-@import "common";
 @import "variables";
+@import "common";
+
 
 body > * {
   @include size;
 }
-$text_color:lightblue;
 
-
-@each $item in h1 {
-#{$item} {
-   text-align: center;
-   color:$text_color
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+ height: 100vh;
+ header{
+   position: relative;
+   height: 25%;
+   background: blue;
+   nav{
+     position: absolute;
+     left:50%;
+     top:50%;
+     transform: translate(-50% , -50%);
+     width: 100%;
+     background: green;
+     ul{
+       display: flex;
+       justify-content: space-around;
+       li {
+         list-style: none;
+         &:hover {
+           color:#fff;
+         }
+       }
+     }
+   }
  }
+  main {
+    height: 50%;
+    background: red;
+  }
+  footer{
+    height: 25%;
+    background: black;
+  }
 }

@@ -14,15 +14,61 @@
   margin-top: 60px;
 }
 
-body > * {
-  width: 100%;
-  min-height: 200px;
-  background-color: blue;
-  border: 1px solid black;
-}
-
 h1 {
   text-align: center;
   color: lightblue;
+}
+
+body > * {
+  width: 100%;
+  border: 1px solid black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+body header {
+  position: relative;
+  height: 25%;
+  background: blue;
+}
+
+body header nav {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background: green;
+}
+
+body header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+body header nav ul li {
+  list-style: none;
+}
+
+body header nav ul li:hover {
+  color: #fff;
+}
+
+body main {
+  height: 50%;
+  background: red;
+}
+
+body footer {
+  height: 25%;
+  background: black;
 }
 

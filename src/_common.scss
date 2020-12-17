@@ -1,5 +1,17 @@
+//test creazione 4 classu margin-top
+
 @for $i from 1 through 4 {
     .margin-top-#{$i * 15} {
         margin-top: 15px * $i;
     }
+}
+
+// usiamo un each ogni h1 del nostro HTML
+$text_color:lightblue;
+
+@each $item in h1 {
+#{$item} {
+   text-align: center;
+   color:$text_color;
+ }
 }
